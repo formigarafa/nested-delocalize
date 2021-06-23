@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
     "DEPRECATED! please use 'delocalize' gem, instead.",
     "This was created by an unexperienced me trying to fix a small detail that now fixed on the original gem."
   ].join("\n")
-  spec.homepage      = "http://github.com/formigarafa/delocalize"
+  spec.homepage      = "http://github.com/formigarafa/nested-delocalize"
   spec.license       = "MIT"
 
   spec.metadata["homepage_uri"] = spec.homepage
