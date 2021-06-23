@@ -4,12 +4,15 @@ require_relative "lib/nested/delocalize/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "nested-delocalize"
-  spec.version       = "0.1.10"
+  spec.version       = Nested::Delocalize::VERSION
   spec.authors       = ["Rafael Santos"]
   spec.email         = ["formigarafa@gmail.com"]
 
   spec.summary       = ""
-  spec.description   = "DEPRECATED! please use 'delocalize' gem, instead. This gem was created by mistake by an unexperienced me trying to fix a small detail that now fixed on the original gem."
+  spec.description   = [
+    "DEPRECATED! please use 'delocalize' gem, instead.",
+    "This was created by an unexperienced me trying to fix a small detail that now fixed on the original gem."
+  ].join("\n")
   spec.homepage      = "http://github.com/formigarafa/delocalize"
   spec.license       = "MIT"
 
