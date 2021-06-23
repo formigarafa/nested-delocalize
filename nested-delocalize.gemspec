@@ -1,22 +1,26 @@
-# -*- encoding: utf-8 -*-
-# stub: nested-delocalize 0.1.9 ruby lib
+# frozen_string_literal: true
 
-Gem::Specification.new do |s|
-  s.name = "nested-delocalize".freeze
-  s.version = "0.1.9"
+require_relative "lib/nested/delocalize/version"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib".freeze]
-  s.authors = ["Rafael Santos".freeze]
-  s.date = "2010-03-08"
-  s.description = "Delocalize is a tool for parsing localized dates/times and numbers. Fixed to working with nested models.".freeze
-  s.email = "formigarafa@gmail.com".freeze
-  s.extra_rdoc_files = ["README".freeze]
-  s.files = ["README".freeze]
-  s.homepage = "http://github.com/formigarafa/delocalize".freeze
-  s.rdoc_options = ["--charset=UTF-8".freeze]
-  s.rubygems_version = "2.7.6.3".freeze
-  s.summary = "Localized date/time and number parsing".freeze
+Gem::Specification.new do |spec|
+  spec.name          = "nested-delocalize"
+  spec.version       = "0.1.10"
+  spec.authors       = ["Rafael Santos"]
+  spec.email         = ["formigarafa@gmail.com"]
 
-  s.installed_by_version = "2.7.6.3" if s.respond_to? :installed_by_version
+  spec.summary       = ""
+  spec.description   = "DEPRECATED! please use 'delocalize' gem, instead. This gem was created by mistake by an unexperienced me trying to fix a small detail that now fixed on the original gem."
+  spec.homepage      = "http://github.com/formigarafa/delocalize"
+  spec.license       = "MIT"
+
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/HEAD/CHANGELOG.md"
+
+  spec.files = Dir["lib/**/*.rb"]
+  spec.bindir        = "exe"
+  spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.require_paths = ["lib"]
+
+  spec.add_dependency "delocalize"
 end
